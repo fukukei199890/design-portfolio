@@ -98,7 +98,7 @@ h1, h2 {
 
 /* メニュー表 */
 .menu {
-  background: url('2.jpg') center/cover no-repeat; /* コーヒー豆背景があれば */
+  background: url('2.jpg') center/cover no-repeat;
   color: white;
   padding: 4rem 2rem;
 }
@@ -159,7 +159,7 @@ h1, h2 {
 
 
 .instagram {
-  background: url('4.jpg') center/cover no-repeat; /* ← 背景画像を変更可 */
+  background: url('4.jpg') center/cover no-repeat; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -339,4 +339,34 @@ h1, h2 {
   background: #007acc;
   color: white;
   transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .panel {
+    padding: 2rem 3vw;
+  }
+
+  h1, h2 {
+    font-size: 2rem;
+  }
+
+  .menu-columns {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .insta-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.8rem;
+    padding: 0 1rem;
+  }
+
+  .arrow-btn {
+    padding: 0.7rem;
+    font-size: 1.2rem;
+  }
+
+  .to-top-btn {
+    font-size: 0.9rem;
+  }
 }

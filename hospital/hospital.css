@@ -246,3 +246,64 @@ footer p {
 .to-top-btn a:hover {
   color: #fff;
 }
+
+@media (max-width: 768px) {
+  /* ヘッダーのロゴ縮小、メニュー縦並び */
+  .header-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .logo {
+    height: 80px;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* ヒーローセクションの高さ縮小＆文字サイズ調整 */
+  .hero {
+    height: 50vh;
+    padding: 0 1rem;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1rem;
+  }
+
+  /* メインコンテナの左右パディングを減らす */
+  .container {
+    padding: 1rem;
+  }
+
+  /* お問い合わせセクションのフォームと情報を縦並び */
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  /* 診療内容カードの高さ調整 */
+  .service-cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* フッターのボタン幅を広げてタップしやすく */
+  .to-top-btn {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem auto 0;
+  }
+
+  /* ボタン内リンクも横幅いっぱいに */
+  .to-top-btn a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+  }
+}
